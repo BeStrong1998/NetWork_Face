@@ -1,0 +1,50 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Авторизация</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="../css/style.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- подключаем бутстрап -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	</head>
+	<body class="container">
+        <h1 id="text1">NetWork Face</h1>
+        <!-- создаём контейнер -->
+        <div class="container">
+            <div class="row">
+                <!-- указываем стиль адаптивной вёрстки -->
+                <div class="col-md-12">
+                    <!-- пишем заголовок и пояснительный текст -->
+                    <h2 class="color">Вход в систему</h2>
+                    <!-- метод, которым будем работать с формой — отправлять на сервер -->
+                    <form action="" method="post">
+                        <!-- поле ввода электронной почты -->
+                        <div class="form-group">
+                            <input type="email" placeholder="email" name="email" autocomplete="of"></input>
+                        </div>
+                        <!-- поле ввода пароля -->
+                        <div class="form-group">
+                            <input type="password" placeholder="password" name="password" autocomplete="of"></input>
+                        </div>
+                        <!-- чекбокс для запоминания пароля -->
+                        <div class="color">
+                            <input type="checkbox" id="fLoginRemember" name="fLoginRemember" checked/> <label for="fLoginRemember">Запомнить</label>
+                        </div>
+                        <!-- кнопка отправки данных на сервер -->
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-primary" value="Войти">
+                        </div>
+                        <!-- ссылка для тех, у кого ещё нет аккаунта -->
+                        <p class="color"><a class="color" href="registration.html">Создать новый аккаунт</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
