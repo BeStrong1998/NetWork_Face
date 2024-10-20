@@ -1,0 +1,53 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Регистрация</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="../css/style.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- подключаем бутстрап -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	</head>
+	<body class="container">
+        <h1 id="text1">NetWork Face</h1>
+        <!-- вся страница будет в одном контейнере -->
+        <div class="container">
+            <div class="row">
+                <!-- делаем самую простую вёрстку -->
+                <div class="col-md-12">
+                    <!-- форма регистрации -->
+                    <form action="" method="post" class="form">
+                        <p class="color" id="text2">Регистрация</p>
+                        <!-- поле ввода имени -->
+                        <div class="form-group">
+                            <input type="text" placeholder="username" ></input>
+                        </div>
+                        <!-- поле ввода электронной почты -->
+                        <div class="form-group">
+                            <input type="email" placeholder="email"></input>
+                        </div>
+                        <!-- поле ввода пароля -->
+                        <div class="form-group">
+                            <input type="password" placeholder="password"></input>
+                        </div>
+                        <!-- поле повторного ввода пароля -->
+                        <div class="form-group">
+                            <input type="password" placeholder="repeat password"></input>
+                        </div>
+                        <!-- кнопка отправки данных на сервер -->
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-primary" value="Зарегистрироваться">
+                        </div>
+                        <!-- вход для тех, у кого уже есть аккаунт -->
+                        <p class="color" id="text3"> <a class="color" href="authorization.html">Войти в систему</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
