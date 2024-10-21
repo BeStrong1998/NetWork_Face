@@ -7,7 +7,7 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>Регистрация</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="../css/registration.css"/>
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='../static/css/registration.css')}}"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
         <!-- подключаем бутстрап -->
@@ -49,7 +49,7 @@
                             <input type="submit" name="submit" class="btn btn-primary" value="Зарегистрироваться">
                         </div>
                         <!-- вход для тех, у кого уже есть аккаунт -->
-                        <p class="color" id="text3"> <a class="color" href="authorization.html">Войти в систему</a></p>
+                        <p class="color" id="text3"> <a class="color" href={{url_for('authorization')}}>Войти в систему</a></p>
                     </form>
                 </div>
             </div>

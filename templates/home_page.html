@@ -7,7 +7,7 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>Главная страница</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="../css/style_home_page.css"/>
+		<link rel="stylesheet" href="../static/css/style_home_page.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
         <!-- подключаем бутстрап -->
@@ -17,7 +17,7 @@
 		<div class="footer-flex-container">
 			<div class="footer-field">
 				<h1 id="future-text-log">NetWork Face</h1>
-				<a href="authorization.html" class="button-future-text-exit" target="_blank">Выход</a>
+				<a href="{{url_for('authorization')}}" class="button-future-text-exit" target="_blank">Выход</a>
 			</div>
 		</div>
         <div class="flex_container">
@@ -32,8 +32,8 @@
 				<p id="text-field-left"></p>
 				<div class="menu_profile">
                     <ul class="nav-news-feed">
-					  	<li><div><a>Моя лента новостей</a></div></li>
-					  	<li><div><a>Друзья</a></div></li>
+					  	<li><div><a href="#">Моя лента новостей</a></div></li>
+					  	<li><div><a href="#">Друзья</a></div></li>
 					  	<li><div><a href="#">Сообщения</a></div></li>
 					  	<li><div><a href="#">Фотографии</a></div></li>
 					  	<li><div><a href="#">Видео</a></div></li>

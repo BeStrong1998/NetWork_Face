@@ -7,7 +7,7 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>Авторизация</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="../css/authorization.css"/>
+		<link rel="stylesheet" href="../static/css/authorization.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
         <!-- подключаем бутстрап -->
@@ -44,7 +44,7 @@
                             <input type="submit" name="submit" class="btn btn-primary" value="Войти">
                         </div>
                         <!-- ссылка для тех, у кого ещё нет аккаунта -->
-                        <p class="color"><a class="color" href="registration.html">Создать новый аккаунт</a></p>
+                        <p class="color"><a class="color" href="{{url_for('registration')}}">Создать новый аккаунт</a></p>
                     </form>
                 </div>
             </div>
